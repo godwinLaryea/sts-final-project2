@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-size: 16px;
-
+  font-family:"Poppins", serif;;
 }
 
 body{
@@ -18,10 +21,11 @@ body{
 
 .container{
   max-width: 120rem;
-  height: 100vh;
-  padding: 1rem 1.5rem;
+  min-height: 100vh;
+  padding: 1rem 2rem;
   position: relative;
   background-color: black;
+  margin: auto;
 }
 
 .top-section{
@@ -36,18 +40,28 @@ body{
 }
 
 .top-section .logo-head img{
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 5.5rem;
+  width: 4.5rem;
   object-fit: cover;
 }
 
 .top-section p{
   color: var(--primary-color);
-  line-height: 1.4;
+  font-weight: 600;
+}
+
+.full-name{
+  margin-right: 1.5rem;
+  font-weight: 600;
 }
 
 .fname{
   padding-left: 1rem;
+}
+
+.fname, .lname{
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
 }
 
 
@@ -57,7 +71,6 @@ body{
   right: 0;
   transform: rotate(90deg);
 }
-
 
  
 .nav-links{
@@ -73,12 +86,12 @@ body{
 .image-section{
   margin: auto;
   width: 43.8125rem;
-  height: 39.125rem;
+  height: auto;
 }
 
 .image-section img{
   max-width: 100%;
-  max-height: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -86,6 +99,7 @@ body{
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  margin-top: -4rem;
 }
 
 .footer p{
@@ -95,14 +109,17 @@ body{
 
 .in{
   color: var(--primary-color);
+  font-weight: 600;
 }
 
 .footer img{
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
 }
 
 .icons{
   display: flex;
   gap: 0.75rem;
+  margin-right: 1.5rem;
 }
